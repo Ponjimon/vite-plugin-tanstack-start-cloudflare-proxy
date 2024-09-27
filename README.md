@@ -2,7 +2,7 @@
 
 # vite-plugin-tss-cloudflare-proxy
 
-A Vite plugin to make Cloudflare Bindings work locally when using TanStack Start.
+A Vite plugin to make Cloudflare Bindings work locally when using [TanStack Start](https://tanstack.com/router/v1/docs/framework/react/start/overview).
 
 ## 📦 Install
 
