@@ -1,6 +1,6 @@
 {
     "name": "@ponjimon/vite-plugin-tss-cloudflare-proxy",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "exports": {
         ".": "./src/index.ts"
     },

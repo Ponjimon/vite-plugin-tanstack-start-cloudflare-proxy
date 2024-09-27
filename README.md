@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/vite-plugin-tss-cloudflare-proxy)](https://www.npmjs.com/package/vite-plugin-tss-cloudflare-proxy) [![JSR Package](https://jsr.io/badges/@ponjimon/vite-plugin-tss-cloudflare-proxy)](https://jsr.io/@ponjimon/vite-plugin-tss-cloudflare-proxy) [![node-current](https://img.shields.io/node/v/vite-plugin-tss-cloudflare-proxy)](https://nodejs.org/)
+[![npm](https://img.shields.io/npm/v/@ponjimon/vite-plugin-tss-cloudflare-proxy)](https://www.npmjs.com/package/@ponjimon/vite-plugin-tss-cloudflare-proxy) [![JSR Package](https://jsr.io/badges/@ponjimon/vite-plugin-tss-cloudflare-proxy)](https://jsr.io/@ponjimon/vite-plugin-tss-cloudflare-proxy) [![node-current](https://img.shields.io/node/v/@ponjimon/vite-plugin-tss-cloudflare-proxy)](https://nodejs.org/)
 
 # vite-plugin-tss-cloudflare-proxy
 
