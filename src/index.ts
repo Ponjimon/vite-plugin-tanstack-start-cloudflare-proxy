@@ -7,7 +7,7 @@ import type { ServerResponse } from 'node:http'
 
 // Adapted from solid-start's `handleNodeResponse`:
 // https://github.com/solidjs/solid-start/blob/7398163869b489cce503c167e284891cf51a6613/packages/start/node/fetch.js#L162-L185
-export async function toNodeRequest(res: Response, nodeRes: ServerResponse) {
+async function toNodeRequest(res: Response, nodeRes: ServerResponse) {
   nodeRes.statusCode = res.status
   nodeRes.statusMessage = res.statusText
 
