@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-tss-cloudflare-proxy",
+  "name": "@ponjimon/vite-plugin-tss-cloudflare-proxy",
   "description": "A Vite plugin to make Cloudflare Bindings work locally when using TanStack Start.",
   "keywords": [
     "vite",
