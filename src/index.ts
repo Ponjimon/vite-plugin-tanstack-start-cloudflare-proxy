@@ -1,3 +1,5 @@
+/// <reference types="./env.d.ts" />
+
 import { H3Event, splitCookiesString, type EventHandler } from 'vinxi/http'
 import type { Plugin } from 'vite'
 import type { GetPlatformProxyOptions } from 'wrangler'
