@@ -1,0 +1,59 @@
+{
+  "name": "vite-plugin-tss-cloudflare-proxy",
+  "description": "",
+  "version": "0.0.1",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && tsup && publint",
+    "watch": "tsup --watch",
+    "prerelease": "bun run build",
+    "release": "bunx @morlay/bunpublish",
+    "lint": "biome check ."
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "types": [
+        "./dist/types"
+      ]
+    }
+  },
+  "author": "Ponjimon (https://github.com/ponjimon)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ponjimon/vite-plugin-tss-cloudflare-proxy.git"
+  },
+  "homepage": "https://github.com/ponjimon/vite-plugin-tss-cloudflare-proxy",
+  "dependencies": {
+    "vinxi": "^0.4.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.2",
+    "@cloudflare/workers-types": "^4.20240925.0",
+    "@types/bun": "^1.1.10",
+    "glob": "^11.0.0",
+    "publint": "^0.2.11",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "wrangler": "^3.78.11"
+  },
+  "engines": {
+    "node": ">=18.14.1"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ]
+}
