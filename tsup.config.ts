@@ -1,17 +1,12 @@
-import { glob } from 'glob'
 import { defineConfig } from 'tsup'
 
-const entryPoints = glob.sync('./src/**/*.+(ts|tsx|json)', {
-  ignore: ['./src/**/*.test.+(ts|tsx)'],
-})
-
 export default defineConfig({
-  entry: entryPoints,
+  target: 'node18',
+  clean: true,
   dts: true,
-  tsconfig: './tsconfig.build.json',
-  splitting: false,
-  minify: false,
+  entry: ['src/index.ts'],
   format: ['esm'],
-  bundle: false,
-  platform: 'node',
+  minify: false,
+  tsconfig: './tsconfig.build.json',
+  treeshake: 'recommended',
 })

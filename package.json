@@ -1,33 +1,24 @@
 {
   "name": "vite-plugin-tss-cloudflare-proxy",
   "description": "",
-  "version": "0.0.2",
-  "types": "dist/index.d.ts",
+  "version": "0.0.3",
   "module": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "rimraf dist && tsup && publint",
-    "watch": "tsup --watch",
-    "prerelease": "bun run build",
-    "release": "bunx @morlay/bunpublish",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepack": "bun run  build",
+    "publish:jsr": "bunx jsr publish",
+    "publish:npm": "bunx @morlay/bunpublish",
     "lint": "biome check ."
   },
   "files": [
-    "dist"
+    "dist/",
+    "LICENSE",
+    "README.md"
   ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "types": [
-        "./dist/types"
-      ]
-    }
-  },
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "author": "Ponjimon (https://github.com/ponjimon)",
   "license": "MIT",
   "repository": {
@@ -42,9 +33,6 @@
     "@biomejs/biome": "^1.9.2",
     "@cloudflare/workers-types": "^4.20240925.0",
     "@types/bun": "^1.1.10",
-    "glob": "^11.0.0",
-    "publint": "^0.2.11",
-    "rimraf": "^6.0.1",
     "tsup": "^8.3.0",
     "typescript": "^5.6.2",
     "vite": "^5.4.8",
@@ -55,5 +43,6 @@
   },
   "trustedDependencies": [
     "@biomejs/biome"
-  ]
+  ],
+  "packageManager": "bun@1.1.29"
 }
