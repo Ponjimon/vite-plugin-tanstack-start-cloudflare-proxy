@@ -1,6 +1,20 @@
 {
   "name": "vite-plugin-tss-cloudflare-proxy",
-  "version": "0.0.4",
+  "description": "A Vite plugin to make Cloudflare Bindings work locally when using TanStack Start.",
+  "keywords": [
+    "vite",
+    "cloudflare",
+    "wrangler",
+    "tsup",
+    "typescript",
+    "proxy",
+    "bindings",
+    "tanstack",
+    "start",
+    "plugin",
+    "vite-plugin"
+  ],
+  "version": "0.0.5",
   "author": "Ponjimon (https://github.com/ponjimon)",
   "repository": {
     "type": "git",
@@ -19,8 +33,10 @@
     "vinxi": "^0.4.3",
     "vite": "^5.4.8"
   },
-  "exports": "./dist/index.js",
-  "description": "",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
   "engines": {
     "node": ">=18.14.1"
   },
@@ -45,6 +61,5 @@
     "esbuild",
     "workerd"
   ],
-  "type": "module",
-  "types": "./dist/index.d.ts"
+  "type": "module"
 }
